@@ -7,3 +7,11 @@
 # F0 = 0     (n=0)
 # F1 = 1    (n=1)
 # Fn = F[n-1]+ F[n-2](n=>2)
+
+count = int(input("请输入斐波那契数列长度:"))
+def FibonacciSeq(count):
+    x,y = 0,1
+    for i in range(2, count):
+       x,y = y,x+y
+    return y
+print("第",count,"个斐波那契数列是: ", FibonacciSeq(count))
