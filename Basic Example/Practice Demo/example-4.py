@@ -18,7 +18,7 @@ else:
 sum += day
 
 ##闰年 大于2月的天数 +1
-if (year % 4 == 0) and month > 2 :2000
+if (year % 4 == 0) and month > 2 :
     sum += 1
 
 
